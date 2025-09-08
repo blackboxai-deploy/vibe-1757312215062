@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sawstexa Care - Premium Healthcare Services | Your Health, Our Priority</title>
+    <meta name="description" content="Sawstexa Care provides comprehensive healthcare services with experienced doctors, modern facilities, and personalized care. Book your appointment today.">
+    <meta name="keywords" content="healthcare, medical services, doctors, appointments, Sawstexa Care, health insurance">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loading Spinner -->
+    <div class="loading-spinner" id="loadingSpinner">
+        <div class="spinner"></div>
+        <p>Loading Sawstexa Care...</p>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <!-- Logo -->
+                <div class="nav-logo">
+                    <img src="https://placehold.co/180x60?text=Sawstexa+Care+Premium+Healthcare+Logo+Medical+Cross+Blue+Professional" alt="Sawstexa Care - Premium Healthcare Provider Logo" class="logo-img">
+                    <div class="logo-text">
+                        <h1>Sawstexa Care</h1>
+                        <p>Healthcare Excellence</p>
+                    </div>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#doctors" class="nav-link">Doctors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#testimonials" class="nav-link">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                
+                <!-- CTA Button -->
+                <div class="nav-cta">
+                    <button class="btn btn-primary" onclick="openAppointmentModal()">
+                        Book Appointment
+                    </button>
+                    <button class="btn btn-outline patient-portal-btn">
+                        Patient Portal
+                    </button>
+                </div>
+                
+                <!-- Mobile Menu Toggle -->
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <span class="hero-badge">🏥 Premium Healthcare Services</span>
+                        <h1 class="hero-title">
+                            Your Health is Our 
+                            <span class="gradient-text">Priority</span>
+                        </h1>
+                        <p class="hero-description">
+                            Experience exceptional healthcare with Sawstexa Care. Our team of experienced doctors and modern facilities ensure you receive the best medical care with personalized attention.
+                        </p>
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <h3>25+</h3>
+                                <p>Expert Doctors</p>
+                            </div>
+                            <div class="stat">
+                                <h3>10K+</h3>
+                                <p>Happy Patients</p>
+                            </div>
+                            <div class="stat">
+                                <h3>24/7</h3>
+                                <p>Emergency Care</p>
+                            </div>
+                        </div>
+                        <div class="hero-actions">
+                            <button class="btn btn-primary btn-lg" onclick="openAppointmentModal()">
+                                Book Your Appointment
+                            </button>
+                            <button class="btn btn-outline btn-lg" onclick="scrollToSection('services')">
+                                Our Services
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="https://placehold.co/600x500?text=Modern+Healthcare+Facility+Doctor+Patient+Consultation+Medical+Equipment+Professional+Atmosphere" alt="Modern healthcare facility with doctor consulting patient in professional medical environment" class="hero-img">
+                        <div class="hero-floating-card">
+                            <div class="card-icon">🩺</div>
+                            <div class="card-content">
+                                <h4>Quality Care</h4>
+                                <p>99% Patient Satisfaction</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-wave">
+                <svg viewBox="0 0 1200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0,120 L0,50 Q300,10 600,50 T1200,50 L1200,120 Z" fill="white"/>
+                </svg>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services" id="services">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Our Services</span>
+                    <h2 class="section-title">Comprehensive Healthcare Solutions</h2>
+                    <p class="section-description">
+                        We offer a wide range of medical services to ensure your complete health and wellness
+                    </p>
+                </div>
+                
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="https://placehold.co/80x80?text=General+Medicine+Stethoscope+Medical+Icon+Blue+Healthcare" alt="General Medicine - Primary care and routine medical consultations">
+                        </div>
+                        <div class="service-content">
+                            <h3>General Medicine</h3>
+                            <p>Comprehensive primary care services including routine check-ups, preventive care, and treatment of common health conditions.</p>
+                            <ul class="service-features">
+                                <li>Annual Health Check-ups</li>
+                                <li>Chronic Disease Management</li>
+                                <li>Preventive Care</li>
+                                <li>Health Screenings</li>
+                            </ul>
+                            <button class="service-btn">Learn More</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Service 2 -->
+                    <div class="service-card featured">
+                        <div class="service-badge">Most Popular</div>
+                        <div class="service-icon">
+                            <img src="https://placehold.co/80x80?text=Specialist+Care+Medical+Specialist+Expert+Doctor+Healthcare+Professional" alt="Specialist Care - Advanced medical specializations and expert consultations">
+                        </div>
+                        <div class="service-content">
+                            <h3>Specialist Care</h3>
+                            <p>Access to specialized medical expertise across various disciplines with state-of-the-art diagnostic and treatment facilities.</p>
+                            <ul class="service-features">
+                                <li>Cardiology & Heart Care</li>
+                                <li>Dermatology & Skin Care</li>
+                                <li>Orthopedics & Joint Care</li>
+                                <li>Mental Health Services</li>
+                            </ul>
+                            <button class="service-btn">Learn More</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Service 3 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="https://placehold.co/80x80?text=Emergency+Care+Ambulance+24x7+Medical+Emergency+Red+Cross+Hospital" alt="Emergency Care - 24/7 emergency medical services and critical care">
+                        </div>
+                        <div class="service-content">
+                            <h3>Emergency Care</h3>
+                            <p>24/7 emergency medical services with rapid response team and advanced life support capabilities.</p>
+                            <ul class="service-features">
+                                <li>24/7 Emergency Room</li>
+                                <li>Trauma Care</li>
+                                <li>Ambulance Services</li>
+                                <li>Critical Care Unit</li>
+                            </ul>
+                            <button class="service-btn">Learn More</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Service 4 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="https://placehold.co/80x80?text=Diagnostic+Imaging+X-Ray+MRI+CT+Scan+Medical+Technology+Laboratory" alt="Diagnostic Services - Advanced medical imaging and laboratory testing">
+                        </div>
+                        <div class="service-content">
+                            <h3>Diagnostic Services</h3>
+                            <p>Advanced diagnostic imaging and laboratory services with cutting-edge technology for accurate diagnosis.</p>
+                            <ul class="service-features">
+                                <li>MRI & CT Scans</li>
+                                <li>X-Ray & Ultrasound</li>
+                                <li>Laboratory Testing</li>
+                                <li>Pathology Services</li>
+                            </ul>
+                            <button class="service-btn">Learn More</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Service 5 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="https://placehold.co/80x80?text=Women+Health+Maternity+Gynecology+Mother+Baby+Pink+Healthcare+Family" alt="Women's Health - Comprehensive women's healthcare and maternity services">
+                        </div>
+                        <div class="service-content">
+                            <h3>Women's Health</h3>
+                            <p>Specialized healthcare services for women including maternity care, gynecology, and reproductive health.</p>
+                            <ul class="service-features">
+                                <li>Maternity Care</li>
+                                <li>Gynecological Services</li>
+                                <li>Breast Health Screening</li>
+                                <li>Family Planning</li>
+                            </ul>
+                            <button class="service-btn">Learn More</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Service 6 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <img src="https://placehold.co/80x80?text=Pediatric+Care+Children+Health+Baby+Doctor+Kids+Medical+Family+Healthcare" alt="Pediatric Care - Specialized medical care for children and adolescents">
+                        </div>
+                        <div class="service-content">
+                            <h3>Pediatric Care</h3>
+                            <p>Specialized medical care for infants, children, and adolescents with child-friendly environment and expert pediatricians.</p>
+                            <ul class="service-features">
+                                <li>Well-Child Visits</li>
+                                <li>Vaccinations</li>
+                                <li>Developmental Assessments</li>
+                                <li>Pediatric Specialties</li>
+                            </ul>
+                            <button class="service-btn">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <span class="section-badge">About Sawstexa Care</span>
+                        <h2 class="section-title">Leading Healthcare Excellence Since 2010</h2>
+                        <p class="about-description">
+                            Sawstexa Care has been at the forefront of healthcare innovation, providing exceptional medical services to our community. Our commitment to excellence, combined with state-of-the-art facilities and compassionate care, makes us the trusted choice for your healthcare needs.
+                        </p>
+                        
+                        <div class="about-features">
+                            <div class="feature">
+                                <div class="feature-icon">🏆</div>
+                                <div class="feature-content">
+                                    <h4>Award-Winning Care</h4>
+                                    <p>Recognized for excellence in patient care and medical innovation</p>
+                                </div>
+                            </div>
+                            <div class="feature">
+                                <div class="feature-icon">👨‍⚕️</div>
+                                <div class="feature-content">
+                                    <h4>Expert Medical Team</h4>
+                                    <p>Board-certified physicians with years of specialized experience</p>
+                                </div>
+                            </div>
+                            <div class="feature">
+                                <div class="feature-icon">🔬</div>
+                                <div class="feature-content">
+                                    <h4>Advanced Technology</h4>
+                                    <p>State-of-the-art medical equipment and diagnostic tools</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="about-actions">
+                            <button class="btn btn-primary" onclick="scrollToSection('doctors')">
+                                Meet Our Doctors
+                            </button>
+                            <button class="btn btn-outline">
+                                Our Mission & Values
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="about-image">
+                        <img src="https://placehold.co/550x600?text=Modern+Hospital+Building+Sawstexa+Care+Healthcare+Facility+Medical+Center+Architecture" alt="Modern Sawstexa Care hospital building showcasing advanced healthcare facilities and professional medical environment" class="about-img">
+                        <div class="about-stats">
+                            <div class="stat-card">
+                                <h3>13+</h3>
+                                <p>Years of Excellence</p>
+                            </div>
+                            <div class="stat-card">
+                                <h3>50K+</h3>
+                                <p>Patients Treated</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Doctors Section -->
+        <section class="doctors" id="doctors">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Our Medical Team</span>
+                    <h2 class="section-title">Meet Our Expert Doctors</h2>
+                    <p class="section-description">
+                        Our team of board-certified physicians brings decades of experience and specialized expertise
+                    </p>
+                </div>
+                
+                <div class="doctors-grid">
+                    <!-- Doctor 1 -->
+                    <div class="doctor-card">
+                        <div class="doctor-image">
+                            <img src="https://placehold.co/300x350?text=Dr+Sarah+Johnson+Cardiologist+Professional+Medical+Doctor+White+Coat+Stethoscope" alt="Dr. Sarah Johnson, Chief Cardiologist with extensive experience in heart care and cardiovascular medicine">
+                            <div class="doctor-badge">Chief Cardiologist</div>
+                        </div>
+                        <div class="doctor-content">
+                            <h3>Dr. Sarah Johnson</h3>
+                            <p class="doctor-specialty">Cardiologist & Heart Specialist</p>
+                            <p class="doctor-description">
+                                15+ years of experience in cardiovascular medicine with specialization in interventional cardiology and heart surgery.
+                            </p>
+                            <div class="doctor-credentials">
+                                <span class="credential">MD, FACC</span>
+                                <span class="credential">Harvard Medical</span>
+                            </div>
+                            <div class="doctor-stats">
+                                <div class="stat">
+                                    <strong>2000+</strong>
+                                    <span>Procedures</span>
+                                </div>
+                                <div class="stat">
+                                    <strong>15</strong>
+                                    <span>Years Exp.</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-outline" onclick="openAppointmentModal('Dr. Sarah Johnson')">
+                                Book Appointment
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Doctor 2 -->
+                    <div class="doctor-card">
+                        <div class="doctor-image">
+                            <img src="https://placehold.co/300x350?text=Dr+Michael+Chen+Orthopedic+Surgeon+Professional+Doctor+Medical+Specialist+Surgery" alt="Dr. Michael Chen, Orthopedic Surgeon specializing in joint replacement and sports medicine">
+                            <div class="doctor-badge">Lead Surgeon</div>
+                        </div>
+                        <div class="doctor-content">
+                            <h3>Dr. Michael Chen</h3>
+                            <p class="doctor-specialty">Orthopedic Surgeon</p>
+                            <p class="doctor-description">
+                                Renowned orthopedic surgeon specializing in joint replacement, sports medicine, and minimally invasive procedures.
+                            </p>
+                            <div class="doctor-credentials">
+                                <span class="credential">MD, FAAOS</span>
+                                <span class="credential">Johns Hopkins</span>
+                            </div>
+                            <div class="doctor-stats">
+                                <div class="stat">
+                                    <strong>3500+</strong>
+                                    <span>Surgeries</span>
+                                </div>
+                                <div class="stat">
+                                    <strong>12</strong>
+                                    <span>Years Exp.</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-outline" onclick="openAppointmentModal('Dr. Michael Chen')">
+                                Book Appointment
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Doctor 3 -->
+                    <div class="doctor-card">
+                        <div class="doctor-image">
+                            <img src="https://placehold.co/300x350?text=Dr+Emily+Rodriguez+Pediatrician+Children+Doctor+Medical+Professional+Kids+Healthcare" alt="Dr. Emily Rodriguez, Pediatrician specializing in children's health and development">
+                            <div class="doctor-badge">Pediatric Lead</div>
+                        </div>
+                        <div class="doctor-content">
+                            <h3>Dr. Emily Rodriguez</h3>
+                            <p class="doctor-specialty">Pediatrician</p>
+                            <p class="doctor-description">
+                                Dedicated pediatrician with expertise in child development, adolescent medicine, and family healthcare.
+                            </p>
+                            <div class="doctor-credentials">
+                                <span class="credential">MD, FAAP</span>
+                                <span class="credential">Stanford Medical</span>
+                            </div>
+                            <div class="doctor-stats">
+                                <div class="stat">
+                                    <strong>5000+</strong>
+                                    <span>Children Treated</span>
+                                </div>
+                                <div class="stat">
+                                    <strong>10</strong>
+                                    <span>Years Exp.</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-outline" onclick="openAppointmentModal('Dr. Emily Rodriguez')">
+                                Book Appointment
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Doctor 4 -->
+                    <div class="doctor-card">
+                        <div class="doctor-image">
+                            <img src="https://placehold.co/300x350?text=Dr+Robert+Williams+General+Medicine+Family+Doctor+Primary+Care+Physician" alt="Dr. Robert Williams, Family Medicine physician providing comprehensive primary care">
+                            <div class="doctor-badge">Family Medicine</div>
+                        </div>
+                        <div class="doctor-content">
+                            <h3>Dr. Robert Williams</h3>
+                            <p class="doctor-specialty">Family Medicine</p>
+                            <p class="doctor-description">
+                                Comprehensive primary care physician with focus on preventive medicine and chronic disease management.
+                            </p>
+                            <div class="doctor-credentials">
+                                <span class="credential">MD, AAFP</span>
+                                <span class="credential">Mayo Clinic</span>
+                            </div>
+                            <div class="doctor-stats">
+                                <div class="stat">
+                                    <strong>8000+</strong>
+                                    <span>Patients</span>
+                                </div>
+                                <div class="stat">
+                                    <strong>18</strong>
+                                    <span>Years Exp.</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-outline" onclick="openAppointmentModal('Dr. Robert Williams')">
+                                Book Appointment
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="doctors-cta">
+                    <p>Can't find the right specialist?</p>
+                    <button class="btn btn-primary">View All Doctors</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials" id="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Patient Stories</span>
+                    <h2 class="section-title">What Our Patients Say</h2>
+                    <p class="section-description">
+                        Read genuine reviews from patients who've experienced our exceptional care
+                    </p>
+                </div>
+                
+                <div class="testimonials-carousel">
+                    <div class="testimonial-track" id="testimonialTrack">
+                        <!-- Testimonial 1 -->
+                        <div class="testimonial-card active">
+                            <div class="testimonial-content">
+                                <div class="stars">
+                                    <span>⭐⭐⭐⭐⭐</span>
+                                </div>
+                                <blockquote>
+                                    "The care I received at Sawstexa Care was exceptional. Dr. Johnson's expertise and the entire team's compassion made my recovery smooth and comfortable. Highly recommended!"
+                                </blockquote>
+                                <div class="testimonial-author">
+                                    <img src="https://placehold.co/60x60?text=Patient+Mary+Thompson+Happy+Satisfied+Customer+Healthcare+Review" alt="Mary Thompson - Satisfied patient sharing positive healthcare experience">
+                                    <div class="author-info">
+                                        <h4>Mary Thompson</h4>
+                                        <p>Cardiac Surgery Patient</p>
+                                        <span class="date">March 2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Testimonial 2 -->
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="stars">
+                                    <span>⭐⭐⭐⭐⭐</span>
+                                </div>
+                                <blockquote>
+                                    "As a working mother, I appreciate Sawstexa Care's efficient service and caring approach. Dr. Rodriguez has been wonderful with my children, and the staff always makes us feel welcome."
+                                </blockquote>
+                                <div class="testimonial-author">
+                                    <img src="https://placehold.co/60x60?text=Patient+Jennifer+Davis+Mother+Family+Healthcare+Positive+Review+Testimonial" alt="Jennifer Davis - Happy mother praising pediatric care and family healthcare services">
+                                    <div class="author-info">
+                                        <h4>Jennifer Davis</h4>
+                                        <p>Pediatric Patient Family</p>
+                                        <span class="date">February 2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Testimonial 3 -->
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="stars">
+                                    <span>⭐⭐⭐⭐⭐</span>
+                                </div>
+                                <blockquote>
+                                    "The orthopedic surgery I had with Dr. Chen was life-changing. The rehabilitation support and follow-up care exceeded my expectations. I'm back to playing sports thanks to their expertise."
+                                </blockquote>
+                                <div class="testimonial-author">
+                                    <img src="https://placehold.co/60x60?text=Patient+David+Miller+Sports+Recovery+Surgery+Success+Healthcare+Testimonial" alt="David Miller - Athletic patient sharing successful orthopedic surgery and recovery experience">
+                                    <div class="author-info">
+                                        <h4>David Miller</h4>
+                                        <p>Orthopedic Surgery Patient</p>
+                                        <span class="date">January 2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Testimonial 4 -->
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="stars">
+                                    <span>⭐⭐⭐⭐⭐</span>
+                                </div>
+                                <blockquote>
+                                    "The emergency care team saved my life. Their quick response, professional handling, and continuous care during my recovery made all the difference. Forever grateful to Sawstexa Care."
+                                </blockquote>
+                                <div class="testimonial-author">
+                                    <img src="https://placehold.co/60x60?text=Patient+Robert+Johnson+Emergency+Care+Life+Saved+Grateful+Healthcare+Hero" alt="Robert Johnson - Emergency care patient expressing gratitude for life-saving medical treatment">
+                                    <div class="author-info">
+                                        <h4>Robert Johnson</h4>
+                                        <p>Emergency Care Patient</p>
+                                        <span class="date">December 2023</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Carousel Controls -->
+                    <div class="carousel-controls">
+                        <button class="carousel-btn prev" id="prevBtn">‹</button>
+                        <div class="carousel-indicators" id="carouselIndicators">
+                            <button class="indicator active" data-slide="0"></button>
+                            <button class="indicator" data-slide="1"></button>
+                            <button class="indicator" data-slide="2"></button>
+                            <button class="indicator" data-slide="3"></button>
+                        </div>
+                        <button class="carousel-btn next" id="nextBtn">›</button>
+                    </div>
+                </div>
+                
+                <!-- Patient Rating Summary -->
+                <div class="rating-summary">
+                    <div class="rating-item">
+                        <h3>4.9/5</h3>
+                        <p>Overall Rating</p>
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <div class="rating-item">
+                        <h3>98%</h3>
+                        <p>Recommend Us</p>
+                    </div>
+                    <div class="rating-item">
+                        <h3>1,200+</h3>
+                        <p>Patient Reviews</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Get In Touch</span>
+                    <h2 class="section-title">Contact Sawstexa Care</h2>
+                    <p class="section-description">
+                        Reach out to us for appointments, questions, or emergency care
+                    </p>
+                </div>
+                
+                <div class="contact-content">
+                    <!-- Contact Information -->
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-details">
+                                <h4>Visit Our Clinic</h4>
+                                <p>123 Healthcare Boulevard<br>Medical District, Health City<br>HC 12345, United States</p>
+                                <button class="contact-action">Get Directions</button>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-details">
+                                <h4>Call Us</h4>
+                                <p><strong>Main Line:</strong> (555) 123-4567<br>
+                                <strong>Emergency:</strong> (555) 911-HELP<br>
+                                <strong>Appointments:</strong> (555) 123-BOOK</p>
+                                <button class="contact-action">Call Now</button>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">⏰</div>
+                            <div class="contact-details">
+                                <h4>Hours</h4>
+                                <p><strong>Mon-Fri:</strong> 7:00 AM - 8:00 PM<br>
+                                <strong>Saturday:</strong> 8:00 AM - 6:00 PM<br>
+                                <strong>Sunday:</strong> 10:00 AM - 4:00 PM<br>
+                                <strong>Emergency:</strong> 24/7</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-details">
+                                <h4>Email Us</h4>
+                                <p><strong>General:</strong> info@sawstexacare.com<br>
+                                <strong>Appointments:</strong> appointments@sawstexacare.com<br>
+                                <strong>Billing:</strong> billing@sawstexacare.com</p>
+                                <button class="contact-action">Send Email</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Form -->
+                    <div class="contact-form">
+                        <form id="contactForm" class="form">
+                            <div class="form-header">
+                                <h3>Send Us a Message</h3>
+                                <p>We'll get back to you within 24 hours</p>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                                <div class="error-message" id="nameError"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                                <div class="error-message" id="emailError"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                                <div class="error-message" id="phoneError"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="appointment">Appointment Request</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="medical">Medical Question</option>
+                                    <option value="billing">Billing Question</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <div class="error-message" id="subjectError"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="5" required placeholder="Please provide details about your inquiry..."></textarea>
+                                <div class="error-message" id="messageError"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="checkbox-container">
+                                    <input type="checkbox" id="newsletter" name="newsletter">
+                                    <span class="checkmark"></span>
+                                    Subscribe to our health newsletter for tips and updates
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                            
+                            <div class="form-footer">
+                                <p>For medical emergencies, please call <strong>(555) 911-HELP</strong> or visit our emergency room immediately.</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Map Section -->
+                <div class="map-section">
+                    <div class="map-placeholder">
+                        <img src="https://placehold.co/1200x400?text=Interactive+Map+Sawstexa+Care+Location+Medical+Center+Address+Healthcare+Facility" alt="Interactive map showing Sawstexa Care medical center location and directions">
+                        <div class="map-overlay">
+                            <div class="map-info">
+                                <h4>Sawstexa Care Medical Center</h4>
+                                <p>123 Healthcare Boulevard, Medical District</p>
+                                <button class="btn btn-primary">View in Google Maps</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Company Info -->
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="https://placehold.co/150x50?text=Sawstexa+Care+Footer+Logo+Healthcare+Medical+White" alt="Sawstexa Care - Healthcare Excellence Footer Logo">
+                        <div class="logo-text">
+                            <h3>Sawstexa Care</h3>
+                            <p>Healthcare Excellence</p>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Providing exceptional healthcare services with compassionate care and medical excellence since 2010. Your health is our priority.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="Facebook">📘</a>
+                        <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">💼</a>
+                        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-link" aria-label="YouTube">📺</a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Our Services</a></li>
+                        <li><a href="#doctors">Our Doctors</a></li>
+                        <li><a href="#testimonials">Patient Reviews</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Services -->
+                <div class="footer-section">
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">General Medicine</a></li>
+                        <li><a href="#services">Specialist Care</a></li>
+                        <li><a href="#services">Emergency Care</a></li>
+                        <li><a href="#services">Diagnostic Services</a></li>
+                        <li><a href="#services">Women's Health</a></li>
+                        <li><a href="#services">Pediatric Care</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="footer-section">
+                    <h4>Contact Information</h4>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <p>123 Healthcare Boulevard<br>Medical District, Health City<br>HC 12345</p>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            <p><strong>Main:</strong> (555) 123-4567<br>
+                            <strong>Emergency:</strong> (555) 911-HELP</p>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <p>info@sawstexacare.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">⏰</span>
+                            <p><strong>Mon-Fri:</strong> 7 AM - 8 PM<br>
+                            <strong>Emergency:</strong> 24/7</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Newsletter Signup -->
+            <div class="footer-newsletter">
+                <div class="newsletter-content">
+                    <div class="newsletter-text">
+                        <h4>Stay Updated with Health Tips</h4>
+                        <p>Subscribe to our newsletter for the latest health news, tips, and updates from Sawstexa Care.</p>
+                    </div>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" placeholder="Enter your email address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <div class="copyright">
+                        <p>&copy; 2024 Sawstexa Care. All rights reserved.</p>
+                    </div>
+                    <div class="footer-legal">
+                        <a href="#privacy">Privacy Policy</a>
+                        <a href="#terms">Terms of Service</a>
+                        <a href="#hipaa">HIPAA Compliance</a>
+                        <a href="#accessibility">Accessibility</a>
+                    </div>
+                    <div class="certifications">
+                        <span class="cert">🏥 Joint Commission Accredited</span>
+                        <span class="cert">🛡️ HIPAA Compliant</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Appointment Booking Modal -->
+    <div class="modal" id="appointmentModal">
+        <div class="modal-overlay" onclick="closeAppointmentModal()"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Book Your Appointment</h3>
+                <button class="modal-close" onclick="closeAppointmentModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="appointmentForm" class="form">
+                    <div class="form-group">
+                        <label for="appointmentName">Full Name *</label>
+                        <input type="text" id="appointmentName" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="appointmentEmail">Email Address *</label>
+                        <input type="email" id="appointmentEmail" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="appointmentPhone">Phone Number *</label>
+                        <input type="tel" id="appointmentPhone" name="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="appointmentDoctor">Preferred Doctor</label>
+                        <select id="appointmentDoctor" name="doctor">
+                            <option value="">Any Available Doctor</option>
+                            <option value="dr-sarah-johnson">Dr. Sarah Johnson - Cardiologist</option>
+                            <option value="dr-michael-chen">Dr. Michael Chen - Orthopedic Surgeon</option>
+                            <option value="dr-emily-rodriguez">Dr. Emily Rodriguez - Pediatrician</option>
+                            <option value="dr-robert-williams">Dr. Robert Williams - Family Medicine</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="appointmentDate">Preferred Date *</label>
+                            <input type="date" id="appointmentDate" name="date" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="appointmentTime">Preferred Time *</label>
+                            <select id="appointmentTime" name="time" required>
+                                <option value="">Select Time</option>
+                                <option value="09:00">9:00 AM</option>
+                                <option value="10:00">10:00 AM</option>
+                                <option value="11:00">11:00 AM</option>
+                                <option value="14:00">2:00 PM</option>
+                                <option value="15:00">3:00 PM</option>
+                                <option value="16:00">4:00 PM</option>
+                                <option value="17:00">5:00 PM</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="appointmentReason">Reason for Visit *</label>
+                        <select id="appointmentReason" name="reason" required>
+                            <option value="">Select Reason</option>
+                            <option value="routine-checkup">Routine Check-up</option>
+                            <option value="follow-up">Follow-up Visit</option>
+                            <option value="consultation">Specialist Consultation</option>
+                            <option value="urgent-care">Urgent Care</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="appointmentNotes">Additional Notes</label>
+                        <textarea id="appointmentNotes" name="notes" rows="3" placeholder="Please describe your symptoms or concerns..."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="checkbox-container">
+                            <input type="checkbox" id="insuranceConsent" name="insurance" required>
+                            <span class="checkmark"></span>
+                            I understand that insurance verification may be required before the appointment
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-full">Book Appointment</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTopBtn" onclick="scrollToTop()">
+        ↑
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
